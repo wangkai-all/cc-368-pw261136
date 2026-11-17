@@ -7,6 +7,8 @@ node_modules/
 __pycache__/
 .claude/
 .cc-workbench/
+# 运行时状态（作业记录/产物注册表/快照/发布输出/日志/pid）
+.recalc/
 .next/
 .nuxt/
 target/

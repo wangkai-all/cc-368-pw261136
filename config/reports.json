@@ -1,0 +1,64 @@
+{
+  "reports": [
+    {
+      "id": "sales_summary",
+      "name": "销售汇总报表",
+      "raw_path": "data/raw/sales.csv",
+      "permission": {
+        "role": "analyst",
+        "fields": ["order_id", "region", "product", "amount", "channel"]
+      },
+      "rules": {
+        "drop_negatives": true,
+        "min_amount": 0,
+        "group_by": ["region"],
+        "metrics": ["amount"]
+      }
+    },
+    {
+      "id": "sales_channel",
+      "name": "渠道销售报表",
+      "raw_path": "data/raw/sales.csv",
+      "permission": {
+        "role": "analyst",
+        "fields": ["order_id", "region", "product", "amount", "channel"]
+      },
+      "rules": {
+        "drop_negatives": true,
+        "min_amount": 0,
+        "group_by": ["channel"],
+        "metrics": ["amount"]
+      }
+    },
+    {
+      "id": "finance_revenue",
+      "name": "财务收入报表",
+      "raw_path": "data/raw/sales.csv",
+      "permission": {
+        "role": "finance",
+        "fields": ["order_id", "region", "amount", "channel"]
+      },
+      "rules": {
+        "drop_negatives": true,
+        "min_amount": 0,
+        "group_by": ["region"],
+        "metrics": ["amount"]
+      }
+    },
+    {
+      "id": "cost_detail",
+      "name": "成本明细报表",
+      "raw_path": "data/raw/costs.csv",
+      "permission": {
+        "role": "cost_control",
+        "fields": ["doc_id", "dept", "item", "cost"]
+      },
+      "rules": {
+        "drop_negatives": false,
+        "min_amount": 100,
+        "group_by": ["dept"],
+        "metrics": ["cost"]
+      }
+    }
+  ]
+}

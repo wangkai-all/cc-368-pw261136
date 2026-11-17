@@ -1,0 +1,3 @@
+# 仅使用 Python 3.11 标准库，无第三方依赖。
+# 所有进程以 `python3 -I`（隔离模式）运行，忽略 PYTHONPATH/cwd，
+# 入口脚本 src/run_*.py 自行定位 src 目录。

@@ -1,0 +1,14 @@
+doc_id,dept,item,cost
+C-2001,ops,rent,4200
+C-2002,ops,utilities,860
+C-2003,rdh,servers,3200
+C-2004,rdh,licenses,95
+C-2005,sales,travel,540
+C-2006,sales,ads,1800
+C-2007,ops,logistics,770
+C-2008,rdh,hardware,2400
+C-2009,sales,meals,120
+C-2010,ops,cleaning,260
+C-2011,rdh,support,430
+C-2012,sales,events,1650
+C-2013,ops,rent,-400
